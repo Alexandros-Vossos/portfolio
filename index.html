@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandros Vossos | Portfolio</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="Portfolio_index.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Animated Favicon -->
+  <link rel="icon" type="image/svg+xml" href="AVLogo-animated-advanced.svg">
+  <link rel="icon" type="image/png" href="AVLogo.png">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="AVLogo-animated-advanced.svg" alt="A V Logo" class="logo-img">
+    </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#aboutme">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+
+    <div class="burger" id="burger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <canvas id="heroCanvas"></canvas>
+      <div class="hero-image">
+        <img src="mybluepic.png" alt="Hero Illustration">
+      </div>
+      <div class="hero-content">
+        <h1>
+          <span class="reveal">Think.</span><br>
+          <span class="reveal">Design.</span><br>
+          <span class="reveal">Build.</span><br>
+          <span class="reveal">Repeat.</span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+  <h2>Some Personal Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <img src="project3.png" alt="Web development projects">
+      <h3>Some web</h3>
+      <ul class="project-list">
+        <li><a href="WebThisWebsite.html" target="_blank">This website</a></li>
+        <li><a href="WebAsoeeProject.html" target="_blank">The web developmnent course project</a></li>
+        <li><a href="WebBmiJs.html" target="_blank">The web BMI calculator</a></li>
+      </ul>
+    </div>
+    
+    <div class="project-card">
+      <img src="project4.png" alt="RPA projects">
+      <h3>Some RPA</h3>
+      <ul class="project-list">
+        <li><a href="RPAspeedTest.html" target="_blank">The wifi speed test robot</a></li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <img src="project2.png" alt="Back-end development projects">
+      <h3>Some back-end</h3>
+      <ul class="project-list">
+        <li><a href="BackBmiPython.html" target="_blank">The BMI calculator</a></li>
+        <li><a href="BackTennisPython.html" target="_blank">The tennis match tool</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <!-- About Me Section -->
+  <section class="aboutme" id="aboutme">
+  <h2>Some Things About Me</h2>
+  <div class="aboutme-grid">
+
+    <div class="aboutme-card" data-category="academic">
+  <img src="whatiknow.png" alt="My studies">
+  <h3>What I know</h3>
+</div>
+
+<div class="aboutme-card" data-category="professional">
+  <img src="whatido.png" alt="My work">
+  <h3>What I do</h3>
+</div>
+
+<div class="aboutme-card" data-category="personal">
+  <img src="whoiam.png" alt="My self">
+  <h3>Who I am</h3>
+</div>
+
+  </div>
+</section>
+
+<!--About M Modal -->
+  <div class="about-modal" id="aboutModal">
+    <div class="about-modal-content">
+      <span class="about-modal-close">&times;</span>
+      <div class="about-modal-inner">
+        <div class="about-modal-overlay"></div>
+        <div class="about-modal-text">
+          <h2 id="aboutModalTitle">About Me</h2>
+          <p id="aboutModalText">Choose a topic to see more</p>
+        </div>
+        <div class="about-modal-topics" id="aboutTopics"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <p><b>Connect with me on</b>
+      <a href="https://www.linkedin.com/in/alexandros-vossos-aa1359197/" target="_blank" class="linkedin-icon">
+        <i class="fab fa-linkedin"></i>
+      </a><br><br>
+      <span class="tooltip">
+      <i><img src="AVLogo-animated-advanced.svg" alt="A V Logo" class="logo-img" style="width: 31px; height: auto; margin-bottom: -0.5%;">
+         personal portfolio website 2025<br>Fully designed & developed by <strong>Alexandros Vossos</strong></i>
+      <span class="tooltiptext">
+        This website itself is a showcase of my personal design style and development craft
+      </span>
+    </span>
+    </p>
+  </section>
+
+  <button id="backToTop" title="Back to top">↑</button>
+
+  <script src="Portfolio_index.js"></script>
+</body>
+</html>
